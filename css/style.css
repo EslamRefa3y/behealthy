@@ -1,0 +1,634 @@
+/*
+Template Name: Essentials
+Author URI: https://themeforest.net/user/epic-themes
+Author Name: Epic Themes
+Version: 1.0
+*/
+
+/* --- TABLE OF CONTENT
+
+01. GENERAL LAYOUT
+02. MENU-NAV
+03. FOOTER
+04. HOME
+05. TEAM
+06. FEATURES
+07. PRICING
+08. BLOG
+09. CONTACT
+10. OTHER ELEMENTS
+		a. Newsletter
+		b. Buttons
+		c. Gallery PopUp
+		d. Testimonials
+		e. Accordion Tabs
+		f. Carousel
+		g. Features List
+		h) Dropcaps Features
+		i) Partners
+		j) Testimonial Single
+11. MEDIA QUERIES
+
+--- */
+
+/* ========================================================== */
+/* 			               01. GENERAL LAYOUT                 */
+/* ========================================================== */
+
+html{
+	scroll-behavior: smooth;
+}
+html body{
+	background-color: #e8e9e9 !important;
+}
+
+
+p {
+	font-size: 17px;
+    line-height: 28px;
+	font-weight: 400;
+	color: #7c8595;
+	margin-bottom:15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover{
+	color: #017df7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom:20px;
+  color: #212121;
+  font-weight: bold;
+}
+
+h1 {
+	font-size: 46px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 46px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+.row{
+	justify-content: space-between;
+}
+
+
+
+.section-white {
+	padding: 90px 0 100px 0;
+}
+
+.section-grey{
+	padding: 90px 0 100px 0;
+}
+
+.section-blue{
+	padding: 50px 0;
+}
+
+.section-white.no-padding, .section-grey.no-padding, .section-blue.no-padding {
+	padding:0;
+}
+
+.section-white.medium-paddings, .section-grey.medium-paddings, .section-blue.medium-paddings {
+	padding: 60px 0;
+}
+
+.section-white.small-paddings, .section-grey.small-paddings, .section-blue.small-paddings {
+	padding: 30px 0;
+}
+
+.section-white.xsmall-paddings, .section-grey.xsmall-paddings, .section-blue.xsmall-paddings {
+	padding: 10px 0;
+}
+
+.section-white.small-padding-top, .section-grey.small-padding-top, .section-blue.small-padding-top {
+	padding: 30px 0 90px 0;
+}
+
+.section-white.small-padding-bottom, .section-grey.small-padding-bottom, .section-blue.small-padding-bottom {
+	padding: 90px 0 70px 0;
+}
+
+.section-white.no-padding-bottom, .section-grey.no-padding-bottom, .section-blue.no-padding-bottom {
+	padding: 90px 0 0 0;
+}
+
+.width-100{
+	width: 100%;
+}
+
+.box-shadow {
+	border-radius: 8px;
+    box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* margin and padding classes */
+
+.margin-right-25 {
+	margin-right: 25px !important;
+}
+
+.margin-top-110 {
+	margin-top: 110px !important;
+}
+
+.margin-top-100 {
+	margin-top: 100px !important;
+}
+
+.margin-top-90 {
+	margin-top: 90px !important;
+}
+
+.margin-top-80 {
+	margin-top: 80px !important;
+}
+
+.margin-top-60 {
+	margin-top: 60px !important;
+}
+
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+
+.margin-top-35 {
+	margin-top: 35px !important;
+}
+
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+
+.margin-bottom-5{
+	margin-bottom: 5px;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px !important;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px !important;
+}
+
+.margin-bottom-70 {
+	margin-bottom: 70px !important;
+}
+
+.margin-bottom-80 {
+	margin-bottom: 80px !important;
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px !important;
+}
+
+.margin-bottom-120 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-130 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-140 {
+	margin-bottom: 140px !important;
+}
+
+.padding-top-0 {
+	padding-top: 0px !important;
+}
+
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+.padding-top-25 {
+	padding-top: 25px !important;
+}
+
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+
+.padding-top-35 {
+	padding-top: 35px !important;
+}
+
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+
+.padding-top-45 {
+	padding-top: 45px !important;
+}
+
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+.padding-top-70 {
+	padding-top: 70px !important;
+}
+
+.padding-top-80 {
+	padding-top: 80px !important;
+}
+
+.padding-top-100 {
+	padding-top: 100px !important;
+}
+
+.padding-top-120 {
+	padding-top: 120px !important;
+}
+
+.padding-top-150 {
+	padding-top: 150px !important;
+}
+
+.padding-bottom-70 {
+	padding-bottom: 70px !important;
+}
+
+.padding-bottom-60 {
+	padding-bottom: 60px !important;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px !important;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+
+.padding-bottom-0 {
+	padding-bottom: 0px !important;
+}
+
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+
+.padding-left-20{
+	padding-left: 20px;
+}
+
+/* ========================================================== */
+/* 			                03. FOOTER                        */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			               04. HOME                           */
+/* ========================================================== */
+
+.home-section {
+	position: relative;
+	z-index: 999;
+	overflow: hidden;
+	position: relative;
+  	padding: 100px 0;
+}
+
+.home-section h1{
+    color: #212121;
+}
+
+.home-section p{
+	margin-bottom: 30px;
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #212121;
+}
+
+/* ========================================================== */
+/* 			                06. FEATURES                      */
+/* ========================================================== */
+
+.main-services {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.main-services img{
+	width: 100px;
+}
+
+.main-services h3{
+	font-size: 20px;
+	color: #292929;
+	margin-bottom: 15px;
+}
+
+.service-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.service-item h5{
+	font-size: 30px;
+}
+
+.service-item img{
+	width: 200px;
+}
+
+
+/* Features */
+
+
+.feature-item{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.feature-item .feature-desc h3{
+	font-size: 30px;
+}
+
+.feature-item .feature-desc p{
+	font-size: 24px;
+	color: #212121;
+}
+
+
+
+
+
+
+.btn-white {
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 600;
+	color: #212121 ;
+	background-color: #EEE;
+	border: 1px solid #212121;
+	border-radius: 50px;
+    letter-spacing: 1px;
+	margin: 10px 10px 0 10px 0;
+	padding: 20px 30px;
+	display: inline-block;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+.btn-white:hover{
+	box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+	color: #1e2ed1 !important;
+	border-color: #1e2ed1;
+	background:#f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+
+	.home-section {
+		padding-top: 120px;
+	  	padding-bottom: 110px;
+	}
+
+	#newsletter-form #email_newsletter {
+        width: 80%;
+    	max-width: 320px;
+    }
+
+    .hero-image{
+    	margin-top: 70px;
+    }
+
+    .padding-top-120 {
+	    padding-top: 30px !important;
+	}
+	
+}
+
+@media (max-width: 375px) {
+
+	.home-section h1 {
+	    font-size: 38px;
+	    line-height: 44px;
+	}
+
+	.feature-box {
+	    text-align: center;
+	}
+
+	.feature-box i {
+		display: inline-block;
+		float: none;
+		margin-bottom: 25px;
+	}
+
+	ul.partners-mentions li img {
+	    max-height: 36px;
+	}
+
+	.section-white {
+	    padding: 60px 0 70px 0!important;
+	}
+
+	.section-white.small-padding-bottom, .section-grey.small-padding-bottom {
+	    padding: 60px 0 50px 0!important;
+	}
+
+}
+
+
+/* Start section footer */
+
+.footer {
+    padding-top: 70px;
+	background-color: #ddddde;
+}
+
+.footer .location{
+	margin-bottom: 70px;
+}
+
+.footer h3 {
+    letter-spacing: 1px;
+	font-size: 27px;
+	font-weight: lighter;
+	margin: 30px 0 10px;
+	color: #1e2ed1;
+	text-transform: uppercase;
+}
+.footer p{
+	color: #212121;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+
+
+.footer .copyright {
+    padding: 15px;
+    margin-top: 15px;
+	font-size: 18px;
+	background-color: #111;
+	color: #F1F1F1;
+}
+
+/* End section footer */
+
+
+
+/* ========================================================================================= */
+
+.partners-section p{
+	font-size: 30px;
+	color: #212121;
+}
+
+
+.partners-section .experience img{
+	width: 90%;
+	margin: auto;
+	opacity: 0.5;
+}
+
+section .building {
+	position: relative;
+}
+
+section .building img.location-pin{
+	position: absolute;
+	top: 15%;
+	left: 60%;
+	width: 20%;
+	animation: animate-pin 3s 1s forwards infinite;
+}
+
+@keyframes animate-pin {
+	0%{
+		top: 15%;
+	}
+	50%{
+		top: 35%;
+	}
+	100%{
+		top: 15%;
+	}
+}
+
+.nearest-clinic p{
+	font-size: 30px;
+	color: #212121;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
