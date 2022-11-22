@@ -467,7 +467,8 @@ h6 {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 600;
-	color: #212121 ;
+	color: #212121;
+	text-transform: uppercase;
 	background-color: #EEE;
 	border: 1px solid #212121;
 	border-radius: 50px;
